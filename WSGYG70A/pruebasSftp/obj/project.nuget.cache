@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "PBvtTZafjSlDtHqGeZi2x1LYkVlIx1B0AJHXRZQVCRDqgCOWoOub1774k77hZYI22tV1E27tc9Ubi3PnaP/2FA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\SFTPPruebas\\WSGYG70A\\pruebasSftp\\WSGYG70A.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.applicationinsights.agent.intercept\\2.4.0\\microsoft.applicationinsights.agent.intercept.2.4.0.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\winscp\\6.1.1\\winscp.6.1.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.ApplicationInsights.Agent.Intercept 2.4.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.ApplicationInsights.Agent.Intercept",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

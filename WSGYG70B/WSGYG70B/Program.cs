@@ -20,7 +20,7 @@ class Example
         string metodo = "";
         // Archivo a descargar para encriptar
         string fileName = "";
-        string remoteFilePath = config.GyG.SftpPendientes;
+        string remoteFilePath = config.Davivienda.SftpClienteRuta;
 
         // Archivo para encriptar
         string localFilePath = RutaLog + @"/Floating_repo/";
