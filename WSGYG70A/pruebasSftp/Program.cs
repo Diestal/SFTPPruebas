@@ -7,37 +7,30 @@ using Functions = ConsoleApp3.Functions;
 using System.IO;
 using System.Reflection;
 
-class Example
+internal class Example
 {
     public static void Main()
     {
-        #region
         Functions functions = new Functions();
-        string RutaLog = System.AppDomain.CurrentDomain.BaseDirectory;
+        string RutaLog = AppDomain.CurrentDomain.BaseDirectory;
         string configFilePath = RutaLog + "config.json";
         string json = File.ReadAllText(configFilePath);
-        var config = JsonConvert.DeserializeObject<Config>(json);
+        Config config = JsonConvert.DeserializeObject<Config>(json);
         string metodo = "";
-        // Archivo a descargar para encriptar
         string fileName = "";
         string remoteFilePath = config.GyG.SftpPendientes;
-
-        // Archivo para encriptar
-        string localFilePath = RutaLog + @"/Floating_repo/";
+        string localFilePath = RutaLog + "/Floating_repo/";
         bool keepIndexing = true;
-
-        // Cargar la configuración desde el archivo
-        var hostClient = config.Davivienda.SftpCliente;
-        var portClient = config.Davivienda.SftpPortClient;
-        var userClient = config.Davivienda.SftpClienteUser;
-        var passwordClient = config.Davivienda.SftpClientePass;
-        var fingerPrintClient = config.Davivienda.SftpFingerPrint;
-        var host = config.GyG.SftpHost;
-        var port = config.GyG.SftpPort;
-        var user = config.GyG.SftpUserName;
-        var password = config.GyG.SftpPassword;
-        var fingerPrintHost = config.GyG.SftpFingerPrintHost;
-        #endregion
+        string host = config.GyG.SftpHost;
+        int port = config.GyG.SftpPort;
+        string user = config.GyG.SftpUserName;
+        string password = config.GyG.SftpPassword;
+        string fingerPrintHost = config.GyG.SftpFingerPrintHost;
+        string hostClient = config.Davivienda.SftpCliente;
+        int portClient = 19629;
+        string userClient = config.Davivienda.SftpClienteUser;
+        string passwordClient = config.Davivienda.SftpClientePass;
+        string fingerPrintClient = config.Davivienda.SftpFingerPrint;
         SessionOptions sessionHostOptions = new SessionOptions
         {
             Protocol = Protocol.Sftp,
@@ -47,7 +40,6 @@ class Example
             PortNumber = port,
             SshHostKeyFingerprint = fingerPrintHost
         };
-
         SessionOptions sessionClientOptions = new SessionOptions
         {
             Protocol = Protocol.Sftp,
@@ -57,68 +49,70 @@ class Example
             PortNumber = portClient,
             SshHostKeyFingerprint = fingerPrintClient
         };
-
         try
         {
+            while (true)
+            {
                 using (Session sessionHost = new Session())
                 {
                     sessionHost.Open(sessionHostOptions);
                     if (!sessionHost.Opened)
                     {
-                        metodo = $" -- Hay un problema con el host interno -- ";
+                        metodo = " -- Hay un problema con el host interno -- ";
                         functions.EscribeLog(host, metodo, config.param.RutaDoc);
                         sessionHost.Open(sessionHostOptions);
                     }
                     else
                     {
-                        metodo = $" -- Se establece conexión con el host interno -- ";
+                        metodo = " -- Se establece conexión con el host interno -- ";
                         functions.EscribeLog(host, metodo, config.param.RutaDoc);
                     }
-                    RemoteDirectoryInfo files = sessionHost.ListDirectory(remoteFilePath);
+                    RemoteDirectoryInfo files2 = sessionHost.ListDirectory(remoteFilePath);
+                    int currentFileCount = files2.Files.Count();
                     while (keepIndexing)
                     {
-                        foreach (RemoteFileInfo file in files.Files)
+                        files2 = sessionHost.ListDirectory(remoteFilePath);
+                        int newFileCount = files2.Files.Count();
+                        foreach (RemoteFileInfo file2 in files2.Files)
                         {
-                            if (!file.IsDirectory)
+                            if (!file2.IsDirectory)
                             {
-                                string localTempPath = Path.Combine(localFilePath, file.Name);
-                                TransferOperationResult transferResult = sessionHost.GetFiles(
-                                    RemotePath.EscapeFileMask(remoteFilePath + "/" + file.Name), localTempPath);
+                                string localTempPath = Path.Combine(localFilePath, file2.Name);
+                                TransferOperationResult transferResult = sessionHost.GetFiles(RemotePath.EscapeFileMask(remoteFilePath + "/" + file2.Name), localTempPath);
                                 if (transferResult.IsSuccess)
                                 {
-                                    sessionHost.RemoveFiles(remoteFilePath + "/" + file.Name);
+                                    sessionHost.RemoveFiles(remoteFilePath + "/" + file2.Name);
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Failed to download file: " + file.Name);
+                                    Console.WriteLine("Failed to download file: " + file2.Name);
                                 }
                             }
                         }
-                        Console.WriteLine($"Descargando archivos de la ruta {remoteFilePath}...");
+                        Console.WriteLine("Descargando archivos de la ruta " + remoteFilePath + "...");
                         keepIndexing = false;
                         sessionHost.Close();
                     }
                     sessionHost.Dispose();
                 }
-             
                 using (Session sessionCliente = new Session())
                 {
-                    sessionCliente.ReconnectTime = TimeSpan.FromSeconds(10);
+                    sessionCliente.ReconnectTime = TimeSpan.FromSeconds(10.0);
                     sessionCliente.Open(sessionClientOptions);
                     if (!sessionCliente.Opened)
                     {
-                        metodo = $" -- Hay un problema con el cliente Davivienda -- ";
+                        metodo = " -- Hay un problema con el cliente Davivienda -- ";
                         functions.EscribeLog(hostClient, metodo, config.param.RutaDoc);
                         sessionCliente.Open(sessionClientOptions);
                     }
                     else
                     {
-                        metodo = $" -- Se establece conexión con el servidor de Davivienda -- ";
+                        metodo = " -- Se establece conexión con el servidor de Davivienda -- ";
                         functions.EscribeLog(hostClient, metodo, config.param.RutaDoc);
                     }
-                    RemoteDirectoryInfo files = sessionCliente.ListDirectory(remoteFilePath);
-                    Console.WriteLine($"Subiendo elementos a la ruta {config.Davivienda.SftpClienteRuta}...");
-                    foreach (var file in Directory.GetFiles(localFilePath))
+                    Console.WriteLine("Subiendo elementos a la ruta " + config.Davivienda.SftpClienteRuta + "...");
+                    string[] files3 = Directory.GetFiles(localFilePath);
+                    foreach (string file in files3)
                     {
                         TransferOperationResult transferUpload = sessionCliente.PutFiles(file, config.Davivienda.SftpClienteRuta);
                         File.Delete(file);
@@ -126,6 +120,7 @@ class Example
                     sessionCliente.Close();
                 }
                 Thread.Sleep(5000);
+            }
         }
         catch (Exception ex)
         {
