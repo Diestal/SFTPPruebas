@@ -27,17 +27,16 @@ class Example
         bool keepIndexing = true;
 
         // Cargar la configuración desde el archivo
-        var host = config.Davivienda.SftpCliente;
-        var port = config.Davivienda.SftpPortClient;
-        var user = config.Davivienda.SftpClienteUser;
-        var password = config.Davivienda.SftpClientePass;
-        var fingerPrintHost = config.Davivienda.SftpFingerPrint;
-
-        var hostClient = config.GyG.SftpHost;
-        var portClient = config.GyG.SftpPort;
-        var userClient = config.GyG.SftpUserName;
-        var passwordClient = config.GyG.SftpPassword;
-        var fingerPrintClient = config.GyG.SftpFingerPrintHost;
+        var hostClient = config.Davivienda.SftpCliente;
+        var portClient = config.Davivienda.SftpPortClient;
+        var userClient = config.Davivienda.SftpClienteUser;
+        var passwordClient = config.Davivienda.SftpClientePass;
+        var fingerPrintClient = config.Davivienda.SftpFingerPrint;
+        var host = config.GyG.SftpHost;
+        var port = config.GyG.SftpPort;
+        var user = config.GyG.SftpUserName;
+        var password = config.GyG.SftpPassword;
+        var fingerPrintHost = config.GyG.SftpFingerPrintHost;
         #endregion
         SessionOptions sessionHostOptions = new SessionOptions
         {
@@ -117,6 +116,7 @@ class Example
                         metodo = $" -- Se establece conexión con el servidor de Davivienda -- ";
                         functions.EscribeLog(hostClient, metodo, config.param.RutaDoc);
                     }
+                    RemoteDirectoryInfo files = sessionCliente.ListDirectory(remoteFilePath);
                     Console.WriteLine($"Subiendo elementos a la ruta {config.Davivienda.SftpClienteRuta}...");
                     foreach (var file in Directory.GetFiles(localFilePath))
                     {
