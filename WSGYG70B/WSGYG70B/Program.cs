@@ -82,7 +82,7 @@ class Example
                         {
                             if (!file.IsDirectory)
                             {
-                                string localTempPath = Path.Combine(localFilePath, file.Name);
+                                string localTempPath = Path.Combine(config.param.RutaDoc, file.Name);
                                 TransferOperationResult transferResult = sessionHost.GetFiles(
                                     RemotePath.EscapeFileMask(remoteFilePath + "/" + file.Name), localTempPath);
                                 if (transferResult.IsSuccess)
@@ -101,32 +101,6 @@ class Example
                     }
                     sessionHost.Dispose();
                 }
-             
-                using (Session sessionCliente = new Session())
-                {
-                    sessionCliente.ReconnectTime = TimeSpan.FromSeconds(10);
-                    sessionCliente.Open(sessionClientOptions);
-                    if (!sessionCliente.Opened)
-                    {
-                        metodo = $" -- Hay un problema con el cliente Davivienda -- ";
-                        functions.EscribeLog(hostClient, metodo, config.param.RutaDoc);
-                        sessionCliente.Open(sessionClientOptions);
-                    }
-                    else
-                    {
-                        metodo = $" -- Se establece conexión con el servidor de Davivienda -- ";
-                        functions.EscribeLog(hostClient, metodo, config.param.RutaDoc);
-                    }
-                    RemoteDirectoryInfo files = sessionCliente.ListDirectory(remoteFilePath);
-                    Console.WriteLine($"Subiendo elementos a la ruta {config.Davivienda.SftpClienteRuta}...");
-                    foreach (var file in Directory.GetFiles(localFilePath))
-                    {
-                        TransferOperationResult transferUpload = sessionCliente.PutFiles(file, config.Davivienda.SftpClienteRuta);
-                        File.Delete(file);
-                    }
-                    sessionCliente.Close();
-                }
-                Thread.Sleep(5000);
         }
         catch (Exception ex)
         {
