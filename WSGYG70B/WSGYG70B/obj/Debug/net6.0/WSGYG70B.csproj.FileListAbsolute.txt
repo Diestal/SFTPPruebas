@@ -1,0 +1,60 @@
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WinSCP.exe
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WSGYG70B.exe
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WSGYG70B.deps.json
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WSGYG70B.runtimeconfig.json
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WSGYG70B.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WSGYG70B.pdb
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\Microsoft.AI.Agent.Intercept.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\bin\Debug\net6.0\WinSCPnet.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.AssemblyReference.cache
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.AssemblyInfoInputs.cache
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.AssemblyInfo.cs
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.CoreCompileInputs.cache
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.CopyComplete
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\refint\WSGYG70B.dll
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.pdb
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\WSGYG70B.genruntimeconfig.cache
+F:\Proyectos para portafolio\Net core\pruebasSftp\pruebasSftp\obj\Debug\net6.0\ref\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WinSCP.exe
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WSGYG70B.exe
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WSGYG70B.deps.json
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WSGYG70B.runtimeconfig.json
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WSGYG70B.pdb
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\Microsoft.AI.Agent.Intercept.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\bin\Debug\net6.0\WinSCPnet.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.csproj.CopyComplete
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\refint\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.pdb
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\WSGYG70B.genruntimeconfig.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\pruebasSftp\obj\Debug\net6.0\ref\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WinSCP.exe
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WSGYG70B.exe
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WSGYG70B.deps.json
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WSGYG70B.runtimeconfig.json
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WSGYG70B.pdb
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\Microsoft.AI.Agent.Intercept.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\bin\Debug\net6.0\WinSCPnet.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.csproj.CopyComplete
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\refint\WSGYG70B.dll
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.pdb
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\WSGYG70B.genruntimeconfig.cache
+C:\Users\USUARIO\Documents\SFTPPruebas\WSGYG70B\WSGYG70B\obj\Debug\net6.0\ref\WSGYG70B.dll
